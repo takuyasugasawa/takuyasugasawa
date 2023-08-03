@@ -3,7 +3,7 @@
 package controllers
 
 import (
-	"golang_udemy/todo_app/app/models"
+	"golang_udemy/todo_app_heroku/app/models"
 	"log"
 	"net/http"
 )

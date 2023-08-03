@@ -4,7 +4,7 @@ import (
 	"crypto/sha1"
 	"database/sql"
 	"fmt"
-	"golang_udemy/todo_app/config"
+	"golang_udemy/todo_app_heroku/config"
 	"log"
 	"os"
 

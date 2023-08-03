@@ -1,7 +1,7 @@
 package config
 
 import (
-	"golang_udemy/todo_app/utils"
+	"golang_udemy/todo_app_heroku/utils"
 	"log"
 
 	"gopkg.in/go-ini/ini.v1"

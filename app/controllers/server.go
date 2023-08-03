@@ -2,8 +2,8 @@ package controllers
 
 import (
 	"fmt"
-	"golang_udemy/todo_app/app/models"
-	"golang_udemy/todo_app/config"
+	"golang_udemy/todo_app_heroku/app/models"
+	"golang_udemy/todo_app_heroku/config"
 	"html/template"
 	"net/http"
 	"os"

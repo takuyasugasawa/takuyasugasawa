@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"golang_udemy/todo_app/app/controllers"
-	"golang_udemy/todo_app/app/models"
+	"golang_udemy/todo_app_heroku/app/controllers"
+	"golang_udemy/todo_app_heroku/app/models"
 )
 
 func main() {
