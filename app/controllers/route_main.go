@@ -21,7 +21,7 @@ func top(w http.ResponseWriter, r *http.Request) {
 	// // テンプレートを生成
 	// t, err := template.ParseFiles("app/views/templates/top.html")
 	// if err != nil {
-	// 	log.Fatalln(err)
+	// 	log.Println(err)
 	// }
 	// // テンプレートを実行
 	// t.Execute(w, "Hello")

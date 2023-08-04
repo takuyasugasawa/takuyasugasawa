@@ -32,14 +32,14 @@ func init() {
 	connection += "sslmode=require"
 	Db, err = sql.Open(config.Config.SQLDriver, connection)
 	if err != nil {
-		log.Fatalln(err)
+		log.Println(err)
 	}
 
 	/*
 		Db, err = sql.Open(config.Config.SQLDriver, config.Config.DbName)
 
 		if err != nil {
-			log.Fatalln(err)
+			log.Println(err)
 		}
 
 		// ' ではなく `である点は注意

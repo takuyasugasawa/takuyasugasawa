@@ -17,7 +17,7 @@ func main() {
 
 		session, err := user.CreateSession()
 		if err != nil {
-			log.Fatalln(err)
+			log.Println(err)
 		}
 		fmt.Println(session)
 

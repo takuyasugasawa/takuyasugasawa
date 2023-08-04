@@ -23,7 +23,7 @@ func signup(w http.ResponseWriter, r *http.Request) {
 		// ParseFormでリクエストパラメータを取得する
 		err := r.ParseForm()
 		if err != nil {
-			log.Fatalln(err)
+			log.Println(err)
 		}
 		user := models.User{
 			Name:     r.PostFormValue("name"),
@@ -31,7 +31,7 @@ func signup(w http.ResponseWriter, r *http.Request) {
 			Password: r.PostFormValue("password"),
 		}
 		if err := user.CreateUser(); err != nil {
-			log.Fatalln(err)
+			log.Println(err)
 		}
 
 		// topページへリダイレクト
@@ -55,14 +55,14 @@ func authenticate(w http.ResponseWriter, r *http.Request) {
 	user, err := models.GetUserByEmail(r.PostFormValue("email"))
 
 	if err != nil {
-		log.Fatalln(err)
+		log.Println(err)
 		http.Redirect(w, r, "/login", 302)
 	}
 
 	if user.Password == models.Encrypt(r.PostFormValue("password")) {
 		session, err := user.CreateSession()
 		if err != nil {
-			log.Fatalln(err)
+			log.Println(err)
 		}
 
 		cookie := http.Cookie{
